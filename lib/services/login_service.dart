@@ -21,7 +21,7 @@ class _LoginWidgetState extends State<LoginWidget> {
   var _emailController = TextEditingController();
   var _passwordController = TextEditingController();
 
-  void doLogIn(){
+  void doLogIn(BuildContext context){
 
     String email = _emailController.text.toString().trim();
     String password = _passwordController.text.toString().trim();

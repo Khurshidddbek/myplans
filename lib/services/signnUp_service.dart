@@ -22,7 +22,7 @@ class _SignUpwidgetState extends State<SignUpwidget> {
   var _emailController = TextEditingController();
   var _passwordController = TextEditingController();
 
-  doSignUp() {
+  doSignUp(BuildContext context) {
     String name = _fullNameController.text.toString().trim();
     String email = _emailController.text.toString().trim();
     String password = _passwordController.text.toString().trim();

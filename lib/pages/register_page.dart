@@ -119,7 +119,7 @@ class _RegisterPageState extends State<RegisterPage>  with SingleTickerProviderS
                               return HomePage();
                             }));
                             //login
-                            LoginWidget().createState().doLogIn();
+                            LoginWidget().createState().doLogIn(context);
                           }
                         },
                         child: Container(
@@ -150,9 +150,9 @@ class _RegisterPageState extends State<RegisterPage>  with SingleTickerProviderS
                       child: GestureDetector(
                         onTap: (){
                           if(_isShowSignUp){
-                            print("hello");
-                            Navigator.pushReplacementNamed(context, HomePage.id);
-                         // SignUpwidget().createState().doSignUp();
+                            // print("hello");
+                            // Navigator.pushReplacementNamed(context, HomePage.id);
+                            SignUpwidget().createState().doSignUp(context);
                           }else{
                             updateView();
                           }
